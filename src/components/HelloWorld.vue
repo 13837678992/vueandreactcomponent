@@ -29,10 +29,23 @@
 
 <script>
 import LuckyExcel from 'luckyexcel'
+import 'luckysheet/dist/plugins/css/pluginsCss.css'
+import 'luckysheet/dist/plugins/plugins.css'
+import 'luckysheet/dist/css/luckysheet.css'
+import 'luckysheet/dist/assets/iconfont/iconfont.css'
+
+import 'luckysheet/dist/plugins/js/plugin.js'
+import 'luckysheet/dist/luckysheet.umd.js'
+
+
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created() {
+    window.$ =$;
   },
   data(){
     return {

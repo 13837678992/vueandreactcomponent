@@ -10,5 +10,14 @@ module.exports = defineConfig({
         'assets': path.resolve(__dirname, 'src/assets')
       }
     }
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://169.254.83.107:3000',
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' },
+      }
+    }
   }
 })

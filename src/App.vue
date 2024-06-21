@@ -1,20 +1,21 @@
 <template>
   <div id="app">
 <!--    <ExcelEditPreview />-->
-    <HelloWorld></HelloWorld>
+    <VueOffice></VueOffice>
   </div>
 
 </template>
 
 <script>
-import ExcelEditPreview from "@/components/ExcelEditPreview.vue";
-import HelloWorld from "@/components/HelloWorld.vue";
+// import ExcelEditPreview from "@/components/ExcelEditPreview.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
+import VueOffice from "@/components/VueOffice.vue";
 export default {
   name: 'App',
   components: {
     // eslint-disable-next-line
-    ExcelEditPreview,
-    HelloWorld
+    // ExcelEditPreview,
+    VueOffice
   }
 }
 </script>
